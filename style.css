@@ -101,6 +101,7 @@ body{
 .error{
     display: flex;
     flex-direction: column;
+    display: none;
 }
 .error p{
     margin-top: 10px;
