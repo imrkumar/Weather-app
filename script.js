@@ -30,8 +30,14 @@ async function checkWeather(city){
     document.querySelector('.weather').style.display = 'block';
     document.querySelector('.error').style.display = 'none';
 
+    
 }
 }
 searchBtn.addEventListener('click',()=>{
     checkWeather(searchBox.value);
+})
+searchBox.addEventListener('keyup',(event)=>{
+    if(event.keyCode === 13){
+        checkWeather(searchBox.value); 
+    }
 })
